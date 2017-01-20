@@ -1,0 +1,1 @@
+This program shows how a binary search tree would function by implementing it through code.
