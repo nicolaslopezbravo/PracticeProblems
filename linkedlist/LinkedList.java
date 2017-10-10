@@ -69,9 +69,26 @@ public class LinkedList<T>
         Node<T> temp = head;
         while(temp != null)
         {
-            System.out.print(temp.val + " ");
+            System.out.print(temp.data + " ");
             temp = temp.next;
         }
         System.out.println();
+    }
+
+    public static void main(String [] args)
+    {
+        LinkedList<Integer> listy = new LinkedList<Integer>();
+
+        for(int i = 0; i < 20; i++)
+        {
+            listy.insertAtHead((int)(Math.random() * 100 + 1));
+        }
+        listy.print();  
+        listy.removeHead();
+        listy.print();
+        listy.insertAtTail(0);
+        listy.print(); 
+        listy.insertAtHead(0);
+        listy.print();
     }
 }
